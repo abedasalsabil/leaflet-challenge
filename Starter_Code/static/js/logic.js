@@ -56,10 +56,10 @@ fetch(url).then((response) =>response.json()).then((data) => {
 
 // create a legend to provide context of the markers
 var legendColors = ["green", "#89FF49", "yellow", "orange", "#FF8349", "red"];
-var legendLabels = ["-10-10", "10-30", "30-50", "50-70", "70-90", "90+"];
+var legendLabels = [-10, 10, 30, 50, 70, 90];
 
 // create a 'legend' variable 
-var legend = L.control({position: 'bottomleft'});
+var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function() {
     var div = L.DomUtil.create('div', 'info legend');
