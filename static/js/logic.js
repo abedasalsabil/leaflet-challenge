@@ -67,7 +67,7 @@ legend.onAdd = function() {
     div.innerHTML = legendInfo; // add title element
 
     for (var i = 0; i < legendColors.length; i++) {
-        div.innerHTML += "<i style='background: "
+        div.innerHTML += "<i style='background-color: "
           + legendColors[i]
           + "'></i> "
           + legendLabels[i]
